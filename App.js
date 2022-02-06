@@ -1,10 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { LogBox, StyleSheet, Text, View } from 'react-native';
+import ScrollPage from './screens/ScrollPage';
+
+LogBox.ignoreAllLogs(true);
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <ScrollPage />
       <StatusBar style="auto" />
     </View>
   );
